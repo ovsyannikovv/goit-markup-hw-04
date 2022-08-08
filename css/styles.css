@@ -114,16 +114,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
+.header-link.current {
+  color: var(--accent-color);
+}
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
 
-.header-link.current {
-  color: var(--accent-color);
-}
-
 .header-contact {
+  display: flex;
+  align-items: center;
+  width: auto;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -132,6 +134,7 @@ body {
 .header-contact:hover,
 .header-contact:focus {
   color: var(--accent-color);
+  fill: #2196f3;
 }
 .contact-icon {
   margin-right: 10px;
@@ -180,30 +183,15 @@ body {
   margin-right: 30px;
 }
 
-.adventage-item::before {
-  content: '';
-  display: block;
+.advantage-icon-block {
+  width: 270px;
   height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-  /* border: 1px solid red; */
-}
-
-.adventage-antena::before {
-  background-image: url(../img/antenna\ 1.svg);
-}
-
-.adventage-cklok::before {
-  background-image: url(../img/clock\ 1.svg);
-}
-
-.adventage-diagram::before {
-  background-image: url(../img/diagram\ 1.svg);
-}
-
-.adventage-astro::before {
-  background-image: url(../img/astronaut\ 1.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .adventage-title {
@@ -260,6 +248,8 @@ body {
 
 .team-item {
   width: calc((100% - 90px) / 4);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .team {
@@ -420,14 +410,16 @@ body {
   column-gap: 10px;
 }
 
-.footer-soc-block {
-  margin-right: 70px;
-}
-
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   fill: var(--btn-accent-color);
   background-color: var(--accent-color);
+}
+.footer-soc-block {
+  margin-left: 70px;
+}
+.foot-container {
+  display: flex;
 }
 /* ----------------PORTFOLIO------------- */
 .project-list {
@@ -445,6 +437,11 @@ body {
 
 .project-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.project-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-content {
   padding: 20px 24px;
