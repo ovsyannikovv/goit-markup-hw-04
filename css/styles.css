@@ -153,11 +153,12 @@ img {
   background-color: var(--background-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/bcg-img.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   max-width: 1600px;
   padding: 200px 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .hero-title {
