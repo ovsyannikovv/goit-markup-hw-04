@@ -155,7 +155,7 @@ img {
     url(../img/bcg-img.jpg);
   background-repeat: no-repeat;
   max-width: 1600px;
-  padding: 200px;
+  padding: 200px 0;
   margin-right: auto;
   margin-left: auto;
 }
