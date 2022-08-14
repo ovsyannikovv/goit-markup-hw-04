@@ -32,6 +32,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -65,6 +66,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 /* ----------------HEADER------------- */
 .header {
   padding-top: 24px;
@@ -118,6 +120,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  transition-property: color;
+  transition-duration: 250ms;
 }
 .header-link.current {
   color: var(--accent-color);
@@ -135,6 +139,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
 }
 
 .header-contact:hover,
@@ -244,6 +250,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  position: relative;
 }
 
 .activity-title {
@@ -254,6 +261,25 @@ img {
   color: var(--title-color);
   margin-bottom: 50px;
   text-align: center;
+}
+
+.activity-after-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 27px;
+  color: #ffffff;
+}
+.activity-position {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0px;
+  bottom: 0;
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /* ----------------TEAM------------- */
@@ -314,12 +340,19 @@ img {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
+  transition-property: background-color;
+  transition-duration: 250ms;
 }
 
 .team-soc {
   display: flex;
   justify-content: center;
   column-gap: 10px;
+}
+
+.team-soc-icon {
+  transition-property: fill;
+  transition-duration: 250ms;
 }
 
 .team-soc-link:hover,
@@ -348,6 +381,8 @@ img {
   justify-content: center;
   fill: #afb1b8;
   border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
 }
 
 .clients-list {
@@ -358,6 +393,11 @@ img {
 .clients-soc-link:focus {
   fill: var(--btn-background-color);
   border-color: var(--accent-color);
+}
+
+.clients-soc-icom {
+  transition-property: fill;
+  transition-duration: 250ms;
 }
 
 /* ----------------FOOTER------------- */
@@ -395,6 +435,8 @@ img {
   letter-spacing: 0.03em;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
 }
 
 .footer-link:hover,
@@ -421,6 +463,8 @@ img {
   justify-content: center;
   fill: var(--btn-accent-color);
   background: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
 }
 
 .footer-soc-list {
@@ -440,6 +484,7 @@ img {
   display: flex;
   align-items: baseline;
 }
+
 /* ----------------PORTFOLIO------------- */
 .project-list {
   display: flex;
@@ -459,9 +504,12 @@ img {
 }
 .project-item-link {
   display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
 }
 
-.project-item-link:hover {
+.project-item-link:hover,
+.project-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -490,6 +538,8 @@ img {
   color: var(--title-color);
   padding: 6px 22px;
   border: none;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
 }
 
 .project-btn:hover,
